@@ -36,7 +36,7 @@ export default class Todo extends React.Component {
 
     const counter =
       this.state.todos.length !== 0
-        ? `You have ${this.state.todoCounter} todos`
+        ? `You have ${this.state.todoCounter} todo(s)`
         : null;
 
     return (

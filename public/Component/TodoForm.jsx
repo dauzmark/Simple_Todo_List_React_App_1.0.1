@@ -13,7 +13,6 @@ export default class TodoForm extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     if (this.state.todo === "") {
-      // alert("Please add todo");
       this.setState({ warning: true });
     } else {
       this.props.addTodo(this.state.todo);

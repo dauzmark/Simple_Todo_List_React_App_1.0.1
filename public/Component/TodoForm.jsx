@@ -14,6 +14,7 @@ export default class TodoForm extends React.Component {
     e.preventDefault();
     if (this.state.todo === "") {
       this.setState({ warning: true });
+      setTimeout(() => this.setState({ warning: false }), 2000);
     } else {
       this.props.addTodo(this.state.todo);
       this.setState({ todo: "", warning: false });
